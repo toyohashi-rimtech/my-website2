@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N3H1PR9196"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-N3H1PR9196');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google検索用タイトル -->
+    <title>リムテック | 豊橋市のプログラミングスクール</title>
+    <!-- Google検索用説明文 -->
+    <meta name="description" content="開講記念50%オフ！豊橋市のリムテックでは、Web制作・Excel自動化・GAS開発を通じて業務の効率化を支援しています。初心者からプロまで幅広く対応。今すぐお問い合わせください！">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(135deg, #6e45e2, #88d3ce);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 4vw 4vw;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 1.2em;
+        }
+        .header .logo {
+            font-size: 3vw;
+            font-weight: bold;
+        }
+        .header .contact {
+            font-size: 1.8vw;
+        }
+        .nav {
+            background-color: #444;
+            text-align: center;
+            padding: 15px 0;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 1.8vw;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .nav a:hover {
+            color: #88d3ce;
+        }
+        .section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            padding: 40px;
+        }
+        .section img {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            display: block;
+            margin: auto;
+        }
+        h2 {
+            color: #6e45e2;
+            border-bottom: 3px solid #88d3ce;
+            padding-bottom: 8px;
+            font-size: 1.8em;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .flex-container img {
+            width: 48%;
+            border-radius: 12px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #f0f0f0;
+            margin: 3px 0;
+            padding: 12px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+        .learning-style-li {
+            width: 43%;
+            height: 25em;
+            vertical-align: top;
+        }
+
+        .learning-style-section {
+            padding: 60px 40px;
+            border-radius: 16px;
+        }
+
+        .learning-style-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .learning-style-card {
+            background-color: #13315c;
+            padding: 30px 20px;
+            border-radius: 20px;
+            width: 42%;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .learning-style-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.4);
+        }
+
+        .learning-style-card img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 4px solid #fff;
+        }
+
+        .learning-style-card strong {
+            font-size: 1.3em;
+            display: block;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .learning-style-card p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #e0e0e0;
+        }
+
+        .table-container {
+            overflow-x: auto; /* 横スクロールを有効にする */
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed; /* セルのサイズを均等にする */
+        }
+
+        th, td {
+            padding: 8px 0;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        td {
+            background-color: #fafafa;
+        }
+
+        .price{
+            text-decoration: line-through;
+        }
+
+        .new-price {
+            color: red;
+            margin-left: 3px;
+        }
+
+        h3 {
+            display: inline-block;
+            margin: 0;
+        }
+
+        .contact-button {
+            background: linear-gradient(135deg, #6fb1fc, #4364f7);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .contact-button:hover {
+            background: linear-gradient(135deg, #4364f7, #6fb1fc);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .learning-style-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media screen and (min-width: 1px) and (max-width: 470px) {
+            .learning-style-li {
+                width: 90%;
+            }
+            .nav a {
+                margin: 0 15px;
+                font-size: 2.5vw;
+            }
+            .section .icon-img {
+                width: 40%;
+            }
+        }
+
+        @media screen and (min-width: 1px) and (max-width: 845px) {
+            .learning-style-card {
+                width: 90%;
+            }
+        }
+    </style>
+    <meta name="google-site-verification" content="GNa4vhU7A4THu6j-FC6whWkczyAZnoAbYMMZ4ZqdgxI" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10838446135">
+    </script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-10838446135');
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">豊橋プログラミングスクール リムテック</div>
+        <div class="contact">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdO_1yaOt8v8Raa87Mshj8YdOhM_HKoK9yAqtWj3667sHTJng/viewform?usp=dialog" class="contact-button">メールでお問い合わせ</a>
+        </div>
+    </header>
+    <nav class="nav">
+        <a href="#curriculum">カリキュラム</a>
+        <a href="#learning-style">学習スタイル</a>
+        <a href="#pricing">料金体系</a>
+        <a href="#faq">よくあるご質問</a>
+    </nav>
+    
+    <section id="curriculum" class="section" style="background: linear-gradient(to right, #f5f7fa, #c3cfe2); border-radius: 20px;">
+        <h2 style="text-align: center; color: #333;">カリキュラム</h2>
+    
+        <p style="text-align: center; margin-bottom: 40px; color: #444;">
+            すぐに実務レベルの"本物"のプログラミングに触れられるのはここ豊橋リムテックだけ！<br>
+            一人ひとりの目的やスキルに合わせて、柔軟にカスタマイズ！<br>
+            初心者から経験者まで、自分のペースで確実にスキルアップ。
+        </p>
+    
+        <div style="display: flex; flex-direction: column; gap: 30px; align-items: center;">
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+                <div style="background: white; padding: 20px; border-radius: 16px; width: 260px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); text-align: center;">
+                    <img src="https://img.icons8.com/color/96/computer.png" alt="IT基礎" class="icon-img" style="margin-bottom: 15px;">
+                    <h3 style="color: #6e45e2;">ITの基礎</h3>
+                    <p style="color: #555;">パソコン操作、タイピング、インターネットの使い方などを丁寧に指導します。</p>
+                </div>
+                <div style="background: white; padding: 20px; border-radius: 16px; width: 260px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); text-align: center;">
+                    <img src="https://img.icons8.com/color/96/source-code.png" alt="プログラミング基礎" class="icon-img" style="margin-bottom: 15px;">
+                    <h3 style="color: #6e45e2;">プログラミング基礎</h3>
+                    <p style="color: #555;">HTML・CSS・JavaScriptなどの基礎を学び、簡単なWebページが作れるようになります。</p>
+                </div>
+                <div style="background: white; padding: 20px; border-radius: 16px; width: 260px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); text-align: center;">
+                    <img src="https://img.icons8.com/color/96/code-fork.png" alt="プログラミング応用" class="icon-img" style="margin-bottom: 15px;">
+                    <h3 style="color: #6e45e2;">プログラミング応用</h3>
+                    <p style="color: #555;">簡単なアプリ制作や、動きのあるWebサイトを作成できるようになります。</p>
+                </div>
+                <div style="background: white; padding: 20px; border-radius: 16px; width: 260px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); text-align: center;">
+                    <img src="https://img.icons8.com/color/96/settings.png" alt="熟練レベル" class="icon-img" style="margin-bottom: 15px;">
+                    <h3 style="color: #6e45e2;">プログラミング熟練</h3>
+                    <p style="color: #555;">実務レベルの開発力を身につけます。（実務を模した課題もご用意しております）</p>
+                </div>
+            </div>
+    
+            <img src="step.png" alt="ステップアップのイメージ" style="max-width: 600px; width: 100%; margin-top: 20px;">
+            
+            <div style="max-width: 720px; font-size: 1em; line-height: 1.8; color: #333;">
+                <p>
+                    必要に応じて「ITの基礎」「プログラミング基礎」は省略も可能です。<br>
+                    学べる内容は以下のとおりです：
+                </p>
+                <ul style="padding-left: 1.2em;">
+                    <li>✅ HTML・CSS・JavaScript：視覚的にわかりやすく、楽しく学べる初心者向けの言語</li>
+                    <li>✅ Excel・ExcelVBA・GoogleAppScript：ビジネスの現場で役立つ、実践的なスキル</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section id="learning-style" class="section learning-style-section">
+        <h2>学習スタイル</h2>
+        <p style="text-align:center;"><strong>２つの学習スタイルをご選択可能です。</strong></p>
+        
+        <div class="learning-style-container">
+            <div class="learning-style-card">
+                <img src="multi.jpg" alt="オンライングループ学習">
+                <strong>オンライングループ学習</strong>
+                <p>
+                    講師１人、生徒３～５名のグループで学習を行います。<br>
+                    １人１人のペースに合わせることを心掛けます。<br>
+                    授業についていけなくなるということはございませんのでご安心ください。
+                </p>
+            </div>
+            <div class="learning-style-card">
+                <img src="solo.jpg" alt="オンライン個別学習">
+                <strong>オンライン個別学習</strong>
+                <p>
+                    講師１人、生徒１名で学習を行います。<br>
+                    マンツーマンなのでわからないところも漏れなく気軽に聞けます。
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="pricing" class="section">
+        <h2>料金体系</h2>
+        <p>リムテックの料金体系はシンプルです。</p>
+        <h3 style="color: red;">あなたの第一歩を応援します。今なら開講記念で受講料50％OFF！<br></h3>
+
+        <ul>
+            <li>オンライングループ学習：<span class="price">3,000円</span><strong class="new-price">1500円！</strong> / 60分（1レッスン） 月4回</li>
+            <li><span style="margin-right: 31px;">オンライン個別学習</span>：<span class="price">5,000円</span><strong class="new-price">2500円！</strong> / 60分（1レッスン） 月4回</li>
+        </ul>
+    </section>
+    
+    <section id="faq" class="section">
+        <h2>よくあるご質問</h2>
+        <p><strong>Q. 講師はどんな人ですか？</strong><br>
+            A. 講師は男性1名で、静岡大学卒業後、エンジニアとして5年間の経験を積んでいます。これまでの経験で得た知識を、わかりやすく丁寧にお伝えいたします！</p>
+        <p><strong>Q. 学習する種目は選べますか？</strong><br>
+        A. 「HTML、CSS、JavaScript」、「Excel、ExcelVBA、GoogleAppScript」の２種の中からお選びいただけます。</p>
+        <p><strong>Q. 対象年齢はいくつですか？</strong><br>
+            A. 中学１年生以上の方を推奨しております。</p>
+        <p><strong>Q. 教室はいつ開催されていますか？</strong><br>
+        A. 「<a href="#vacancies">空室状況</a>」をご確認ください。「〇」の時刻は空いております。</p>
+        <p><strong>Q. 宿題はありますか？</strong><br>
+        A. 宿題はございません。スクール時間外での自学自習は各自行っていただいて問題ありません。</p>
+        <p><strong>Q. 何か資格は取れますか？</strong><br>
+        A. 当スクールでは特定の資格取得を推奨しておりません。<br>
+           しかし、本カリキュラムを修了すれば、<br>
+           資格取得と同等の知識・スキルを身につけられる内容となっております。</p>
+        <p><strong>Q. 入会金や初期費用はありますか？</strong><br>
+        A. 当スクールではオンライン学習を採用させていただいているため、パソコン１台とインターネット環境をご用意いただく必要がございます。また、Excel講座をご選択いただいた場合、Excelのライセンスをご用意いただく必要がございます。</p>
+        <p><strong>Q. 授業をお休みした場合、振替できますか？</strong><br>
+        A. 振替可能です。 ご都合がつかず授業を欠席された場合、他曜日・他教室での振替授業、あるいは補講の対応が可能です。</p>
+        <p><strong>Q. いつでも入会できますか？</strong><br>
+        A. 個別学習は随時ご入会いただけます。 グループ学習は3名以上の人数が集まり次第、随時開講しています。詳しくはお問い合わせください。</p>
+        <p><strong>Q. 事前見学や体験会はありますか？</strong><br>
+        A. オンライン個別学習式で60分の無料体験をご用意しております。</p>
+        
+    </section>
+
+    <section id="vacancies" class="section">
+        <h2>空室状況</h2>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>時間/曜日</th>
+                <th>月</th>
+                <th>火</th>
+                <th>水</th>
+                <th>金</th>
+                <th>土</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>9:00</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+              </tr>
+              <tr>
+                <td>10:00</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+              </tr>
+              <tr>
+                <td>11:00</td>
+                <td>✖</td>
+                <td>✖</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+              </tr>
+              <tr>
+                <td>12:00</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+              </tr>
+              <tr>
+                <td>13:00</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+              </tr>
+              <tr>
+                <td>14:00</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+              </tr>
+              <tr>
+                <td>15:00</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+              </tr>
+              <tr>
+                <td>16:00</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+              </tr>
+              <tr>
+                <td>17:00</td>
+                <td>✖</td>
+                <td>〇</td>
+                <td>✖</td>
+                <td>〇</td>
+                <td>✖</td>
+              </tr>
+              <tr>
+                <td>18:00</td>
+                <td>✖</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>✖</td>
+                <td>〇</td>
+              </tr>
+              <tr>
+                <td>19:00</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+              </tr>
+              <tr>
+                <td>20:00</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+              </tr>
+              <tr>
+                <td>21:00</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>✖</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    <footer style="background: linear-gradient(135deg, #444, #222); color: #fff; padding: 40px 20px; text-align: center;">
+        <h3 style="font-size: 1.5em; margin-bottom: 20px;">ご質問・ご相談はお気軽に</h3>
+        <p style="font-size: 1.1em; margin-bottom: 30px;">無料体験・お問い合わせは以下よりご連絡ください。</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdO_1yaOt8v8Raa87Mshj8YdOhM_HKoK9yAqtWj3667sHTJng/viewform?usp=dialog"
+           target="_blank"
+           style="display: inline-block; padding: 15px 30px; background-color: #88d3ce; color: #000; font-weight: bold; text-decoration: none; border-radius: 50px; transition: background-color 0.3s, transform 0.3s;">
+            メールでお問い合わせ
+        </a>
+        <p style="margin-top: 40px; font-size: 0.9em; color: #ccc;">© 2025 豊橋リムテック All rights reserved.</p>
+    </footer>
+</body>
+</html>
